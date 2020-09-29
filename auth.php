@@ -1,3 +1,9 @@
+ <!DOCTYPE html>
+            <html>
+            <head>
+                
+            </head>
+            <body>
 <?php      
     include('connectDB.php');  
     $username = $_POST['user'];  
@@ -16,12 +22,7 @@
           
         if($count == 1){  
             echo "<h1><center> Login successful </center></h1>";  
-            <!DOCTYPE html>
-            <html>
-            <head>
-                
-            </head>
-            <body>
+          
             <form action="info.php" method="get">
                 Name: <input type="text" name="name"><br>
                 Age: <input type="text" name="age"><br>
@@ -31,11 +32,12 @@
                 <input type="submit">
             </form>
             
-            </body>
-            </html>
+            
     
         }  
         else{  
             echo "<h1> Login failed. Invalid username or password.</h1>";  
         }     
 ?>  
+                </body>
+            </html>
